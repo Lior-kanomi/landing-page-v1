@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+}
+
 .new-tab {
   display: flex;
   flex-direction: column;
@@ -48,17 +52,16 @@ input[name="search-input"] {
   margin: 0;
   outline: none;
   padding: 0 22px;
-  font: 18px arial,sans-serif;
   position: absolute;
   top: 1px;
   width: 100%;
   height: 100%;
 
+
 }
 
 input[name="search-input"]::placeholder {
   color: rgb(128,134,139);
-  font-family: 'Roboto',arial,sans-serif;
   font-size: 14px;
   visibility: inherit;
 }
@@ -83,7 +86,7 @@ input[name="search-input"]:focus:-ms-input-placeholder { color:transparent; }
 }
 
 .most-visited {
-    margin: 45px 0;
+    margin: 20px 0;
     width: 100%;
     text-align: center;
     user-select: none;

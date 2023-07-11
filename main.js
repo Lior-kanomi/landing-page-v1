@@ -1,20 +1,13 @@
 // Event listener for 'Google Search' button
-const form = document.getElementById("singleForm");
+document.addEventListener("DOMContentLoaded", function () {
+  var img = document.getElementById("doodleImage");
+  var randomNumber = (Math.floor(Math.random() * 10) + 1).toString();
+  img.src = "./Doodles/doodleipsum-" + randomNumber + ".png";
+});
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  var query = document.querySelector(".search_bar").value;
+  var query = document.querySelector("#search-input").value;
   var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
-  window.open(url, "_blank");
+  window.location.href = url;
 });
-
-// Event listener for 'I'm Feeling Lucky' button
-document
-  .querySelector('input[name="feelinglucky"]')
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    var query = document.querySelector(".search_bar").value;
-    var url =
-      "https://www.google.com/search?q=" + encodeURIComponent(query) + "&btnI";
-    window.open(url, "_blank");
-  });
