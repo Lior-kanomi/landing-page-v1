@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const searchForm = document.querySelector(".search-form");
 
-form.addEventListener("submit", function (event) {
+searchForm.addEventListener("submit", function (event) {
   event.preventDefault();
   var query = document.querySelector("#search-input").value;
   var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
