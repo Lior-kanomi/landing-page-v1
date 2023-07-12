@@ -1,9 +1,9 @@
-// Event listener for 'Google Search' button
-document.addEventListener("DOMContentLoaded", function () {
-  var img = document.getElementById("doodleImage");
-  var randomNumber = (Math.floor(Math.random() * 10) + 1).toString();
-  img.src = "./Doodles/doodleipsum-" + randomNumber + ".png";
-});
+var img = new Image();
+img.src = "https://doodleipsum.com/300x300/outline"; // Replace with your image URL
+img.onload = function () {
+  document.getElementById("doodleImage").src = img.src ?? "./doodleipsum-6.png"; // Set the source of the image element in your HTML
+  document.getElementById("body").style.display = "block"; // Display the body
+};
 
 const searchForm = document.querySelector(".search-form");
 
