@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   img.src = "./Doodles/doodleipsum-" + randomNumber + ".png";
 });
 
+const searchForm = document.querySelector(".search-form");
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   var query = document.querySelector("#search-input").value;
